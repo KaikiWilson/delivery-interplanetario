@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
+}
+
+
+
+
+header {
+    width: 100vw;
+    height: 10vh;
+
+    padding: 20px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+
+    border-bottom: 1px solid #d2d2d27a;
+}
+
+header .black-arrow-box {
+    display: flex;
+    border: 1px solid #d2d2d2;
+    border-radius: 10px;
+    width: 35px;
+    height: 40px;
+}
+
+header img {
+    padding: 10px;
+}
+
+header h1 {
+    padding: 10px;
+}
+
+.shipping-billing-allbox {
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.shipping-and-billing-address-box {
+    padding: 2px;
+    display: flex;
+    border-radius: 5px;
+    background-color: #dcdcdce3;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.shipping-and-billing-address-box .shipping-address {
+    background-color: #fff;
+}
+
+.shipping-and-billing-address-box .billing-address {
+    cursor: not-allowed;
+}
+
+.shipping-address:active, .billing-address:active {
+    background-color: #ffffff;
+}
+
+.shipping-address, .billing-address {
+    transform: none;
+    width: 50%;
+    border: 0px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+
+    font-size: 15px;
+}
+
+
+
+
+.search-address-box {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #d1d1d1;
+    border-radius: 0 0 25px 25px;
+    
+    .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 100,
+    'GRAD' 0,
+    'opsz' 10;
+    display: flex;
+    align-items: center;
+    }
+}
+
+.search-allbox {
+    display: flex;
+    background-color: #d2d2d2;
+    border-radius: 5px;
+    width: 90%;
+    height: 30px;
+}
+
+.search-input {
+    border: 0;
+    border-radius: 5px;
+    width: 100%;
+    background-color: transparent;
+    cursor: not-allowed;
+
+}
+
+.search-input:focus {
+    outline: none;
+    border: 1px solid rgb(28, 81, 255);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+form {
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.label-planet {
+    padding: 5px;
+}
+
+.planet {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    height: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 2.5px 0px #fff;
+    transition: .25s;
+}
+
+.planet:hover, .planet:focus {
+    box-shadow: 0px 0px 10px 0px #fff;
+    transition: .25s;
+}
+
+.label-location {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.location {
+    width: 100%;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    height: 25px;
+    text-align: center;
+    box-shadow: 0px 0px 2.5px 0px #fff;
+    transition: .25s;
+}
+
+.location:hover, .location:focus {
+    box-shadow: 0px 0px 10px 0px #fff;
+    transition: .25s;
+}
+
+.button-submit-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit {
+    width: 50%;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ffffff;
+    color: #fff;
+    border-radius: 2.5px;
+    background-color: #ffffff25;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.submit:hover {
+    box-shadow: 0px 0px 10px 0px #fff;
+    transition: .25s;
+}
+
+
+
+
+
+
+
+
+.address-list-box {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    max-height: max-content;
+    height: 100%;
+    color: #fff;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
+
+    overflow-y: scroll;
+}
+
+.card-list {
+    width: 95%;
+    background-color: #f1f1f17c;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.edit-addres {
+    cursor: not-allowed;
+}
+
+
+
+
+
+
+.cancel-and-save-box {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);    
+
+    .cancel, .save-changes {
+        outline: 0;
+        font-size: 10px;
+        border: transparent;
+        width: 50%;
+        height: 25px;
+        border-radius: 15px
+    };
+
+    .buttons-allbox {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cancel-box {
+        display: flex;
+        width: 100%;
+
+        justify-content: center;
+        align-content: center;
+        
+        
+        .cancel {
+            width: 90%;
+            transition: .25s;
+        }
+
+        .cancel:hover {
+            box-shadow: 0px 0px 10px 0px #fff;
+            transition: .1s;
+        }
+    
+    }
+
+    .save-box {
+        display: flex;
+        width: 100%;
+
+        justify-content: center;
+        align-content: center;
+
+        .save-changes {
+            width: 90%;
+            transition: .25s;
+        };
+
+        .save-changes:hover {
+            box-shadow: 0px 0px 10px 0px #fff;
+            transition: .1s;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 992px) {
+    .before-header{
+        display: flex;
+        justify-content: center;
+
+        width: 100vw;
+    }
+
+    header {
+        width: 40vw;
+    }
+
+    .before-main {
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+
+        width: 100vw;
+    }
+
+    main {
+        width: 40vw;
+        background-color: transparent;
+    }
+
+    form {
+        background: transparent;
+    }
+} 
+
+@media only screen and (min-width: 1382px) {
+    
+}
